@@ -1,0 +1,99 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
+  background-color: wheat;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+  background-color:darkgrey;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+[type="password"],
+select {
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+input[type="button"],
+button {
+  background-color: rgb(39, 131, 212);
+  padding: 10px;
+  border: 1;
+  min-width: 100px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #eeeeee69;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dashboard {
+  width: 500px;
+  margin: auto;
+}
+
+.errorMessage {
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+
+.Subir_Imagen{
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+}
