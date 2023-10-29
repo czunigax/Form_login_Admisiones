@@ -157,3 +157,14 @@ h1 {
   text-align: center;
   color: #fff;
 }
+
+.vista_previa{
+
+  height: 222px;
+  width: 400px;
+  display: 'block';
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin:10px 0;
+}

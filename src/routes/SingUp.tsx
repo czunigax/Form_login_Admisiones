@@ -16,11 +16,22 @@ export default function SignUp(){
   const [Telefono_Estudiante,setTelefono_Estudiante] = useState("");
   const [Correo_Estudiante,setCorreo_Estudiante] = useState("");
   const [imagen, setImagen] = useState<File | null>(null);
+  const [imagenPreview, setImagenPreview] = useState<string | null>(null);
 
 const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
   const file = e.target.files && e.target.files[0];
   if (file) {
     setImagen(file);
+    const reader = new FileReader();
+    reader.onload = (e) => {
+     if(e.target){
+      setImagenPreview(e.target.result as string);
+     }
+    };
+    reader.readAsDataURL(file);
+    } else {
+      setImagenPreview(null);
+    
   }
 };
 
@@ -95,6 +106,8 @@ const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
           onChange={handleImageUpload}
 
         />
+        
+        {imagenPreview && <img className="vista_previa" src={imagenPreview} alt="Vista previa" />}
 
        <button>Enviar</button>
               </form>
