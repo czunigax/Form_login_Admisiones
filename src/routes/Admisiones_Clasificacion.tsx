@@ -7,7 +7,7 @@ export default function Admisiones_Clasificacion(){
         id="Carrera">
         <option value="">Selecciona Una Carrera</option>
         <option value="Dormir">Dormir</option>
-        <option value="Comer">Dormir</option>
+        <option value="Comer">Comer</option>
         </select> 
         <button className="boton_clasificar">Clasificar</button>
         <table>

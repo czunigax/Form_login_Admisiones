@@ -8,6 +8,7 @@ import SingUp from './routes/SingUp.tsx';
 import Dashboard from './routes/Dashboard.tsx';
 import Protected from './routes/Protected.tsx';
 import Admisiones_Clasificacion from './routes/Admisiones_Clasificacion.tsx';
+import Registrar_Notas from './routes/Registrar_Notas.tsx';
 import { AuthProvider } from './Auth/authProvider.tsx';
 
 const router = createBrowserRouter([
@@ -34,6 +35,10 @@ element:<Dashboard/>,
 {
   path:"/Admisiones_Clasificacion",
   element:<Admisiones_Clasificacion/>, 
+},
+{
+  path:"/Registrar_Notas",
+  element:<Registrar_Notas/>, 
 }
 ]);
 
