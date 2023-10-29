@@ -7,6 +7,7 @@ import Login from './routes/Login.tsx';
 import SingUp from './routes/SingUp.tsx';
 import Dashboard from './routes/Dashboard.tsx';
 import Protected from './routes/Protected.tsx';
+import Admisiones_Clasificacion from './routes/Admisiones_Clasificacion.tsx';
 import { AuthProvider } from './Auth/authProvider.tsx';
 
 const router = createBrowserRouter([
@@ -26,7 +27,13 @@ element:<Protected/>,
 children:[{
   path:"/Dashboard",
 element:<Dashboard/>,
-}],
+}
+],
+}
+,
+{
+  path:"/Admisiones_Clasificacion",
+  element:<Admisiones_Clasificacion/>, 
 }
 ]);
 
