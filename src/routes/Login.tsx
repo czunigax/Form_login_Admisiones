@@ -21,8 +21,13 @@ export default function Login(){
  <h1> Ingresar </h1>
  <label>Numero de Empleado</label>
  <input type = "text" value={Numero_De_Empleado}
- onChange={(e)=>setNumero_De_Empleado(e.target.value)}
- pattern="^[0-9]+$"
+ onChange={(e) => {
+    const inputValue = e.target.value;
+    
+    const numericValue = inputValue.replace(/[^0-9]/g, '');
+    setNumero_De_Empleado(numericValue);
+  }}
+ 
  />
 
  <label>Clave</label>
