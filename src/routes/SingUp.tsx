@@ -11,6 +11,7 @@ export default function SignUp(){
   const [Segundo_Apellido,setSegundo_Apellido] =useState("");
   const [Carrera_Principal,setCarrera_Principal] =useState("");
   const [Carrera_Secundaria,setCarrera_Secundaria] = useState("");
+  const [Centro_regional,setCentro_regional] = useState("");
   const [Identidad_Estudiante,setIdentidad_Estudiante] = useState("");
   const [Telefono_Estudiante,setTelefono_Estudiante] = useState("");
   const [Correo_Estudiante,setCorreo_Estudiante] = useState("");
@@ -64,6 +65,14 @@ const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         <option value="Ingenieria en dormir">Ingenieria en dormir</option>
         <option value="Licenciatura en Tomas">Licenciatura en Tomas</option>
         </select> 
+        <label>Centro Regional</label>
+        <select
+        id="Centro_Regional" value={Centro_regional}
+        onChange={(e)=>setCentro_regional(e.target.value)}>
+        <option value="">Selecciona Un Centro Regional</option>
+        <option value="Ciudad Universitaria">CU</option>
+        <option value="Valle de Sula">Valle de Sula</option>
+        </select> 
         <label>Numero De Identidad</label>
         <input
          id="Identidad_Estudiante" type = "text" value={Identidad_Estudiante}
@@ -74,22 +83,19 @@ const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange={(e)=>setTelefono_Estudiante(e.target.value)}/>
         <label>Correo</label>
         <input
-         id="Correo_Estudiante" type = "text" value={Correo_Estudiante}
+         id="Correo_Estudiante" type = "email" value={Correo_Estudiante}
          onChange={(e)=>setCorreo_Estudiante(e.target.value)}/>
 
 <label>Subir una imagen</label>
         <input 
           id="imagen_estudiante"
           className="Subir_Imagen"
-          type="file"
+          type="file" 
           accept="image/*"
           onChange={handleImageUpload}
+
         />
 
-        
-        
-       
-        
        <button>Enviar</button>
               </form>
               </DefaultLayout>

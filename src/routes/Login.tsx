@@ -22,6 +22,7 @@ export default function Login(){
  <label>Numero de Empleado</label>
  <input type = "text" value={Numero_De_Empleado}
  onChange={(e)=>setNumero_De_Empleado(e.target.value)}
+ pattern="^[0-9]+$"
  />
 
  <label>Clave</label>
@@ -29,6 +30,9 @@ export default function Login(){
  onChange={(e)=>setClave(e.target.value)}
  />
 <button>Inciar Sesion</button>
+<p>
+  <a href=" /SingUp">Olvide mi contraseña</a>.
+</p>
        </form>
        </DefaultLayout>
     )

@@ -21,54 +21,121 @@ body {
 
 label {
   display: block;
+  color: #fff;
+}
+.form-label {
+  display: block;
+  font-weight: bold;
+  color: #fff; 
+  margin-bottom: 5px; 
 }
 
 .form {
+
   width: 400px;
   margin: 0 auto;
-  background-color:darkgrey;
+  background: linear-gradient(25deg, #4e4848, #2b4c57); /* Fondo gradiente */
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+
+
+  /*width: 400px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s;*/
+}
+
+
+.form:hover {
+  transform: scale(1.02);
 }
 
 input[type="text"],
 [type="password"],
-select {
+[type="email"],
+select,
+.Subir_Imagen {
   display: block;
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0 10px 0;
-  border: 1px solid #000000;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  transition: border-color 0.2s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus,
+[type="password"]:focus,
+[type = "email"]:focus,
+select:focus,
+.Subir_Imagen:focus {
+  border-color: #007bff;
 }
 
 input[type="button"],
 button {
-  background-color: rgb(39, 131, 212);
+  background-color: #007bff;
   padding: 10px;
-  border: 1;
+  border: none;
   min-width: 100px;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
+input[type="button"]:hover,
+button:hover {
+  background-color: #0056b3;
+  color: #fff; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+input[type="text"]:hover,
+[type="password"]:hover,
+[type = "email"]:hover,
+select:hover {
+  border-color: #007bff; 
+  transition: border-color 0.3s; 
+}
+
+
 nav {
-  background-color: #eeeeee69;
+  background-color: #eeeeee99;
+  transition: transform 0.3s;
+}
+
+nav:hover {
+  transform: scale(1.05); 
 }
 
 nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 nav ul li {
   display: inline-block;
   padding: 10px;
+  transition: background-color 0.3s; 
+}
+
+nav ul li:hover {
+  background-color: #007bff;
 }
 
 a {
-  color: rgb(12, 12, 12);
+  color:#fff;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -82,18 +149,11 @@ a {
   background-color: #f2dede;
   color: #a94442;
   padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
 }
+
 h1 {
   text-align: center;
-}
-
-.Subir_Imagen{
-  display: block;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 5px 0 10px 0;
-  border: 1px solid #000000;
-  border-radius: 5px;
-
+  color: #fff;
 }
