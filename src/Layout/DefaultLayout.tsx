@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import   '../routes/Admisiones_Clasificacion';
+import   '../routes/Registrar_Notas';
 interface DefaultLayoutProps{
     children: React.ReactNode
 }
@@ -17,7 +19,14 @@ return(
             </li>
             <li>
                 <Link to = "/SingUp">Administracion</Link>
+                </li>
+                <li>
+                <Link to = "/Admisiones_Clasificacion">Admisiones_Clasificacion</Link>
             </li>
+            <li>
+                <Link to = "/Registrar_Notas">Registrar_Notas</Link>
+            </li>
+            
         </ul>
     </nav>
 </header>
