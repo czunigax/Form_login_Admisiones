@@ -202,8 +202,11 @@ font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
-  background-color: wheat;
+  background-image: url('/src/img/UNAH-ESTUDIANTES.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(34, 61, 100);
   height: 100vh;
   margin: 0;
 }
@@ -214,11 +217,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 form {
   width: 400px;
   margin: 0 auto;
@@ -227,6 +230,7 @@ form {
   border-radius: 5px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
+  background-size: cover;
 }
 
 form:hover {
@@ -312,11 +316,11 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #007bff;
+  background-color: #0a1ecc;
 }
 
 a {
-  color: #fff;
+  color: #fbfeff;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -337,6 +341,9 @@ a {
 h1 {
   text-align: center;
   color: #fff;
+  background-color: #676d74; 
+  padding: 3px; 
+  border-radius: 4px; 
 }
 
 .vista_previa {

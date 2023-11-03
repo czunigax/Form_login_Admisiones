@@ -76,7 +76,7 @@ export default function Registrar_Notas (){
 
 return(
     <DefaultLayout>
-    <h1>Ingresar Notas De La Ultima Prueba Academica</h1>
+    <h1>Ingresar Notas</h1>
     <input type="file" accept=".csv" onChange={handleFileUpload} />
     <table>
     <thead>

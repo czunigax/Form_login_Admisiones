@@ -21,10 +21,10 @@ return(
                 <Link to = "/SingUp">Administracion</Link>
                 </li>
                 <li>
-                <Link to = "/Admisiones_Clasificacion">Admisiones_Clasificacion</Link>
+                <Link to = "/Admisiones_Clasificacion">Clasificacion</Link>
             </li>
             <li>
-                <Link to = "/Registrar_Notas">Registrar_Notas</Link>
+                <Link to = "/Registrar_Notas">Registrar Notas</Link>
             </li>
             
         </ul>
