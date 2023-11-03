@@ -1,203 +1,4 @@
 
-/*
-:root {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
-  background-color: wheat;
-  height: 100vh;
-  margin: 0;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('https://www.xtrafondos.com/wallpapers/resized/textura-de-mezclilla-3279.jpg?s=large') center/cover no-repeat;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-label {
-  display: block;
-  color: #fff;
-}
-.form-label {
-  display: block;
-  font-weight: bold;
-  color: #fff; 
-  margin-bottom: 5px; 
-}
-
-.form {
-
-  width: 400px;
-  margin: 0 auto;
-  background: linear-gradient(25deg, #4e4848, #2b4c57); 
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-
-
-
-}
-
-
-.form:hover {
-  transform: scale(1.02);
-}
-
-input[type="text"],
-[type="password"],
-[type="email"],
-select,
-.Subir_Imagen {
-  display: block;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 5px 0 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.2s;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-input[type="text"]:focus,
-[type="password"]:focus,
-[type = "email"]:focus,
-select:focus,
-.Subir_Imagen:focus {
-  border-color: #007bff;
-}
-
-input[type="button"],
-button {
-  background-color: #007bff;
-  padding: 10px;
-  border: none;
-  min-width: 100px;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-input[type="button"]:hover,
-button:hover {
-  background-color: #0056b3;
-  color: #fff; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-
-input[type="text"]:hover,
-[type="password"]:hover,
-[type = "email"]:hover,
-select:hover {
-  border-color: #007bff; 
-  transition: border-color 0.3s; 
-}
-
-
-nav {
-  background-color: #eeeeee99;
-  transition: transform 0.3s;
-}
-
-nav:hover {
-  transform: scale(1.05); 
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 10px;
-  transition: background-color 0.3s; 
-}
-
-nav ul li:hover {
-  background-color: #007bff;
-}
-
-a {
-  color:#fff;
-  text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.dashboard {
-  width: 500px;
-  margin: auto;
-}
-
-.errorMessage {
-  background-color: #f2dede;
-  color: #a94442;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-h1 {
-  text-align: center;
-  color: #fff;
-}
-
-.vista_previa{
-
-  height: 222px;
-  width: 400px;
-  display: 'block';
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin:10px 0;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 20px 0;
-}
-
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-  font-weight: bold;
-  
-}
-
-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-table tr:nth-child(even) {
-  background-color: #4d4a41;
-}
-
-table tr:hover {
-  background-color: #413fd6;
-}
-
-td{
-color: #fff;
-font-weight: bold;
-}
-
-*/
 :root {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -224,8 +25,8 @@ body {
 }
 form {
   width: 400px;
-  margin: 0 auto;
-  background: linear-gradient(25deg, #4e4848, #2b4c57);
+  margin:  auto;
+  background: linear-gradient(25deg, #161414, #2b4c57);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -296,6 +97,7 @@ button:hover {
 nav {
   background-color: #eeeeee99;
   transition: transform 0.3s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 nav:hover {
@@ -344,6 +146,7 @@ h1 {
   background-color: #676d74; 
   padding: 3px; 
   border-radius: 4px; 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .vista_previa {
